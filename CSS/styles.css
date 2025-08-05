@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    text-align: center;
+    margin-top: 2em;
+}
+
+.parrafo{
+    text-align: center;
+    margin: 15px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background-color: rgb(230, 230, 230);
+    border-radius: 1em;
+}
+
+.formulario h2{
+    color: crimson;
+    padding: 2em;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+}
+
+form label{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(93, 91, 91);
+    font-size: 18px;
+    margin: 10px;
+}
+
+.inputBoton{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+
+form input{
+    background-color: rgb(173, 171, 171);
+    border-style: none;
+    padding: 5px;
+    border-radius: 7px;
+    width: 220px;
+}
+
+form ::placeholder{
+    color: white;
+}
+
+form .botonEnviar{
+    background-color: rgb(44, 166, 166);
+    border: none;
+    padding: 5px;
+    margin: 1em;
+    color: white;
+    border-radius: 4px;
+    width: 8em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.botonEnviar:hover{
+    background-color: rgb(92, 214, 214);
+    transform: scale(1.1);
+}
+
+form .botonCalcular{
+    background-color: crimson;
+    border: none;
+    padding: 5px;
+    margin: 1em;
+    color: white;
+    border-radius: 4px;
+    width: 8em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}
+
+.botonCalcular:hover, .botonBorrarLista:hover{
+    background-color: rgb(226, 60, 94);
+    transform: scale(1.1);
+
+}
+
+ul {
+    list-style: none;
+    margin: 15px;
+}
+
+ul li{
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#resultado {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+form .botonBorrarLista {
+    background-color: crimson;
+    border: none;
+    padding: 5px;
+    margin: 1em;
+    color: white;
+    border-radius: 4px;
+    width: 8em;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+}

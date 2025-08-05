@@ -4,10 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador de gastos</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <h1>Simulador de presupuesto semanal</h1>
-    <p>Este simulador le permite al usuario ingresar gastos diarios, calcula el total y da consejos segun el gasto.</p>
+    <h1 class="titulo">Simulador de gastos</h1>
+    <p class="parrafo">Este simulador le permite al usuario ingresar gastos diarios, calcular el total y dar consejos segun el gasto.</p>
+
+    <section>
+        <div class="formulario">
+            <h2>Ingresá tus gastos</h2>
+            <form action="">
+                <label for="" required>Gasto del día</label>
+                <div class="inputBoton">
+                    <input type="text" placeholder="Ingresa el gasto" id="dato">
+                    <button type="submit" id="boton" class="botonEnviar">Enviar</button>
+                </div>
+
+                <div class="inputBoton">
+                    <button type="submit" id="botonBorrar" class="botonBorrarLista" >Borar Lista</button>
+                    <button type="submit" id="botonCalcular" class="botonCalcular" >Calcular Total</button>
+                </div>
+                <p id="resultado"></p>
+            </form>
+
+            <ul id="lista-gastos"></ul>
+        </div>
+    </section>
+
+
 
     <script src="script.js"></script>
 </body>
